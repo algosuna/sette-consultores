@@ -11,12 +11,66 @@ body {
   background-color: #E8E7E7;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  color: #000;
+}
+
+a,
+a:link,
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #fccc00;
+}
+
+nav a {
   text-transform: uppercase;
 }
 
-p > a {
-  text-transform: none;
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #0f0f0f;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  border-color:#fccc00;
+}
+
+.boton, button, input[type=submit], input[type=reset] {
+  display: inline-block;
+  color: #fccc00;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  border: none;
+}
+
+.boton:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover,
+.boton:focus, button:focus, input[type=submit]:focus, input[type=reset]:focus,
+.boton:active, button:active, input[type=submit]:active, input[type=reset]:active {
+  background-color:#fccc00;
+  color:#000;
+  text-decoration: none;
+}
+
+.boton-ancho {
+  width: 100%;
+  text-align: center;
 }
 
 /*footer {
@@ -25,6 +79,17 @@ p > a {
   color:#878787;
   padding:35px 0;
 }*/
+
+
+/*
+
+  Hero
+
+*/
+
+.hero {
+  background-color: #fccc00;
+}
 
 
 /* Navigation */
@@ -70,8 +135,6 @@ p > a {
   background-position: 95% center;
 }
 
-
-
 .site-nav #redes-sociales {
   margin-top: 30px;
 }
@@ -101,34 +164,22 @@ p > a {
 
 /* Main Header */
 
-.header {
-  background-color:#fccc00;
+.frase-cabecera {
+  padding: 90px 130px;
 }
 
-.header #frase-cabecera {
-  padding:80px 100px 120px;
-  color:#000;
+.frase-cabecera h2 {
+  margin-bottom: 28px;
 }
 
-#frase-cabecera h2 {
-  position:relative;
-  display:block;
-  margin:0 0 28px;
-  font-size:20px;
-}
 
-section {
-  padding:25px 0 0;
-}
+/*
 
-h1, h2 {
-  position:relative;
-  display:block;
-  text-transform:uppercase;
-  margin:0 0 20px;
-  font-size:20px;
-  color:#000;
-}
+  Content
+
+*/
+
+/* Sidebar */
 
 #links-articulos {
   position:relative;
@@ -149,76 +200,16 @@ h1, h2 {
   background:url(../img/mas.png) no-repeat right center;
 }
 
-aside {
-  padding-left:20px;
-}
-
-.boton, button, input[type=submit], input[type=reset] {
-  position:relative;
-  display:inline-block;
-  color:#fccc00;
-  text-transform:uppercase;
-  font-weight:bold;
-  font-size:16px;
-  background-color:#000;
-  text-align:center;
-  text-decoration:none;
-  border:none;
-  cursor:pointer;
-  padding: 20px 30px;
-}
-
-.boton:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover {
-  background-color:#fccc00;
-  color:#000;
-}
-
-boton-ancho {
-  box-sizing:border-box;
-  width:100%;
-  float:right;
-}
-
 #iniciar-sesion {
   position:relative;
   display:block;
   margin-top:25px;
 }
 
-.derecha {
-  text-align:right;
-  position:relative;
-}
-
-input[type=text], input[type=password], input[type=email], input[type=number], textarea {
-  position:relative;
-  display:block;
-  width:100%;
-  box-sizing:border-box;
-  padding:15px;
-  border: 1px solid #0f0f0f;
-  background-color:#fff;
-  color:#000;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:16px;
-  margin-bottom:10px;
-  outline:none;
-}
-
-input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, input[type=number]:hover, textarea:hover
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, textarea:focus {
-  border-color:#fccc00;
-}
-
 #registro {
-  position:absolute;
-  display:inline-block;
-  top:20px;
-  left:0;
-  font-size:16px;
-  color:#333;
-  font-weight:bold;
-  text-decoration:none;
+  font-size: 16px;
+  color: #333;
+  padding: 15px 0px;
 }
 
 #registro:hover {
@@ -226,13 +217,10 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 
 #ultimos article {
-  position:relative;
-  display:block;
   margin-bottom:30px;
 }
 
 #ultimos article h3 {
-  position:relative;
   display:block;
   margin:0 0 20px;
   color:#000;
@@ -249,7 +237,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 }
 
 #ultimos article img:hover {
-  border-color:#fccc0;
+  border-color:#fcccc0;
 }
 
 #contenedor-boton {
@@ -356,18 +344,3 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   font-size:15px;
   right:5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
