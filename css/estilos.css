@@ -78,13 +78,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
   text-align: center;
 }
 
-/*footer {
-  position:relative;
-  background-color:#000;
-  color:#878787;
-  padding:35px 0;
-}*/
-
 
 /*
 
@@ -251,54 +244,73 @@ input:hover, textarea:hover, input:focus, textarea:focus {
   color: #fccc00;
 }
 
-#equipo h5 {
-  position:relative;
-  display:block;
-  font-size:14px;
+
+/*
+
+  Footer
+
+*/
+
+footer {
+  background-color:#000;
+  color:#878787;
+  padding: 15px 0px;
+}
+
+footer h4 {
   color:#fff;
 }
 
-#equipo p {
-  position:relative;
-  display:block;
-  font-size:14px;
+footer h5 {
+  color: #fccc00;
+  margin: 0px;
 }
 
-#equipo section a {
-  position:relative;
-  display:inline-block;
-  width:35px;
-  height:37px;
-  text-indent:-9999px;
-  background-image:url(../img/iconos-alianzas.png);
-  background-repeat:no-repeat;
-  -webkit-transition:all 0.5s ease;
-     -moz-transition:all 0.5s ease;
-      transition:all 0.5s ease;
+footer h5 small {
+  color: #ccc;
+  font-size: 100%;
+  display: block;
+  position: relative;
+  left: 50%;
+  top: -18px;
+  text-transform: none;
 }
 
-#equipo section #facebook {
-  background-position:10px 6px;
+.empresas-amigas a {
+  display: inline-block;
+  width: 35px;
+  height: 37px;
+  text-indent: -9999px;
+  background-image: url(../img/iconos-alianzas.png);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  margin-right: 20px;
 }
 
-#equipo section #facebook:hover {
-  background-position:10px -47px;
+.empresas-amigas a:nth-of-type(1) {
+  background-position: 8px 0px;
 }
 
-#equipo section #youtube {
-  background-position:-52px 6px;
+.empresas-amigas a:hover{
+  background-position: 8px -50px;
 }
 
-#equipo section #youtube:hover {
-  background-position:-52px -47px;
+.empresas-amigas a:nth-of-type(2) {
+  background-position: -55px 0px;
 }
 
-#equipo section #twitter {
-  background-position:-114px 2px;
+.empresas-amigas a:nth-of-type(2):hover {
+  background-position: -55px -50px;
 }
 
-#equipo section #twitter:hover {
-  background-position:-114px -47px;
+.empresas-amigas a:nth-of-type(3) {
+  background-position: -118px -4px;
+}
+
+.empresas-amigas a:nth-of-type(3):hover {
+  background-position: -118px -54px;
 }
 
 #portafolio h7 {
